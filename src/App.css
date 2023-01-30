@@ -5,10 +5,22 @@
   text-align: center;
 }
 
-.App {
-  display: flex;
+.app {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 50rem;
+  border: 3px solid red;
+  border-radius: 10px;
+  list-style: none;
+}
+
+.app li {
+  background-size: contain;
+  background-repeat: no-repeat;
+  justify-self: center;
 }
 
 h1 {
   font-size: 3rem;
+  margin-bottom: 3rem;
 }
