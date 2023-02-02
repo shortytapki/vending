@@ -22,5 +22,41 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #0a84ff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #01468b;
+}
+
+button:disabled {
+  pointer-events: none;
+  background-color: #999;
+}
+
+@media screen and (max-width: 550px) {
+  .grid {
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .products {
+    grid-template-columns: auto;
+  }
+}
+
 @media (prefers-color-scheme: light) {
+  :root {
+    background-color: rgba(255, 255, 255, 0.87);
+    color: #242424;
+  }
 }

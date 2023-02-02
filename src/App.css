@@ -5,19 +5,31 @@
   text-align: center;
 }
 
-.app {
+.grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  min-height: 50rem;
-  border: 3px solid red;
-  border-radius: 10px;
-  list-style: none;
 }
 
-.app li {
+.app {
+  min-height: 50rem;
+  border: 3px solid #999;
+  border-radius: 10px;
+}
+
+.products {
+  row-gap: 3rem;
+  padding: 3rem 0;
+}
+
+.products li {
   background-size: contain;
   background-repeat: no-repeat;
   justify-self: center;
+}
+
+.out-of-stock {
+  filter: grayscale(100%);
+  opacity: 0.5;
 }
 
 h1 {

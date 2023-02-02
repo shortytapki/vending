@@ -1,0 +1,32 @@
+.menu {
+  padding: 2.5rem;
+}
+
+.typo {
+  font-size: 2rem;
+}
+
+.banknotes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.banknote:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.bought-container {
+  border: 3px solid #999;
+  border-radius: 10px;
+}
+
+.bought {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
